@@ -1,0 +1,27 @@
+#This policy uses the Sentinel tfplan/v2 import to require that
+# all GCE compute instances have all mandatory labels
+
+# Note that the comparison is case-sensitive but also that GCE labels are only
+# allowed to contain lowercase letters, numbers, hypens, and underscores.
+
+# Import tfplan-functions.sentinel
+# with alias "plan"
+import "tfplan-functions" as plan
+import "strings"
+import "types"
+
+# Get all VPC resources Topics
+allResources = plan.find_resources("google_compute_network")
+
+mtu_size = 1500
+
+
+result = []
+for allResources as address, rc {
+    vpc_mtu = plan.evaluate_attribute(rc.change.after, "mtu")
+    if  vpc_mtu != mtu_size {
+        append(result,address)
+    }
+}
+
+main = rule { length(result) is 0 }

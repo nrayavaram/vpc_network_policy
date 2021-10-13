@@ -9,3 +9,10 @@ resource "google_compute_network" "vpc_network" {
   auto_create_subnetworks = true
   mtu                     = 1500
 }
+
+resource "google_compute_network" "vpc_network_1" {
+#  project                 = "my-project-name"
+  name                    = "vpc-network"
+  auto_create_subnetworks = true
+
+}

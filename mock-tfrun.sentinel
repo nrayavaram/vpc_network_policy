@@ -1,0 +1,37 @@
+id = "run-mHvSqqfiZJho1uru"
+created_at = "2021-10-08T07:10:36.183Z"
+message = "Triggered via UI"
+commit_sha = "9015a66e3d669a5843fde3ed2c9e6b27ee156432"
+speculative = false
+is_destroy = false
+refresh = true
+refresh_only = false
+replace_addrs = null
+target_addrs = null
+
+variables = {
+	"access_token": {
+		"category":  "terraform",
+		"sensitive": true,
+	},
+}
+
+organization = {
+	"name": "ashwinknaik",
+}
+
+workspace = {
+	"auto_apply":  false,
+	"created_at":  "2021-10-08T07:08:50.074Z",
+	"description": null,
+	"id":          "ws-6nJuLAdQCyyrx39U",
+	"name":        "vpc_network",
+	"tags":        [],
+	"vcs_repo": {
+		"branch":             "",
+		"display_identifier": "nrayavaram/vpc_network",
+		"identifier":         "nrayavaram/vpc_network",
+		"ingress_submodules": false,
+	},
+	"working_directory": "",
+}
