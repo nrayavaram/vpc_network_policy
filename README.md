@@ -42,6 +42,6 @@ $ sentinel test google_check_mtu.sentinel
   PASS - google_check_mtu.sentinel
   PASS - test/google_check_mtu/fail.hcl
   PASS - test/google_check_mtu/null.hcl
-  PASS - test/google_check_mtu/pass.hcl
+  PASS - test/google_check_mtu/success.hcl
 
 
