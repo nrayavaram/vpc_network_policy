@@ -1,7 +1,5 @@
 # vpc_network
 
-# Secret_Manager_policies
-
 
 ### Sentinel file "google_check_mtu.sentinel" is having code to deploy the policies. In order to check the value of MTU is 1500 , We need to validate  policy successfully.**
 
