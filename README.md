@@ -8,9 +8,9 @@
 #### Variables :
 * messages: It is being used to hold the complete message of policies violation to show to the user.
 
-#### Maps :
+#### Method :
 
-* allResources: This is the map, being used to map the all resourses regarding to "vpc-network".
+* allResources: This is the function, being used to get the all resourses regarding to "vpc-network".
 
 * control statements: here we are looping and assigning the all the resourses into two parameters 
     * Parameters
