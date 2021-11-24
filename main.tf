@@ -29,6 +29,7 @@ resource "google_storage_bucket" "GCS" {
     }
 
   }
+ 
 
  labels = {
     owner = "wf"
